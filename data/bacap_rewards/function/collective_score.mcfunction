@@ -56,11 +56,11 @@ execute if score #all bac_advancements matches 550 run tellraw @a {"translate":"
 execute if score #all bac_advancements matches 550 run playsound entity.player.levelup ambient @a
 
 execute if score #all bac_advancements matches 600 run tellraw @a {"translate":"%1$s earned the %2$s advancement of this server!","with":[{"selector":"@s"},{"color":"dark_red","text":"600th"}]}
+execute if score #all bac_advancements matches 600 run tellraw @a {"translate":"%1$s has been unlocked!","with":[{"color":"dark_red","text":"The Nether",bold:true}],italic:true,color:gray}
 execute if score #all bac_advancements matches 650 run tellraw @a {"translate":"%1$s advancements remain to unlock %2$s","with":[{"color":"dark_aqua","text":"600"},{"color":"light_purple","text":"The End",bold:true}],italic:true,color:gray}
 execute if score #all bac_advancements matches 600 run title @a title {translate:"%1$s has been unlocked!","with":[{"text":"The Nether",bold:true}],color:dark_red}
 execute if score #all bac_advancements matches 600 run title @a subtitle {translate:"Nether portals now work as normal.",color:dark_red}
 execute if score #all bac_advancements matches 600.. run noportals disableNetherPortal false
-execute if score #all bac_advancements matches 600 run tellraw @a {"translate":"%1$s has been unlocked!","with":[{"color":"dark_red","text":"The Nether",bold:true}],italic:true,color:gray}
 execute if score #all bac_advancements matches 600 run playsound ui.toast.challenge_complete ambient @a
 
 execute if score #all bac_advancements matches 650 run tellraw @a {"translate":"%1$s earned the %2$s advancement of this server!","with":[{"selector":"@s"},{"color":"dark_aqua","text":"650th"}]}
